@@ -63,7 +63,7 @@
 
 
 
-<body onload=y() background="img\cool-background.jpg" >
+<body onload=y() background="cool-background.jpg" >
 <form method="post"><center>
 	<h1><font color="yellow" size=7 face="arial"><u>PLACEMENT OF ORDER</u></h1></font>
 	<font size="5" color="white">
