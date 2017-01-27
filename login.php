@@ -1,8 +1,8 @@
 <html>
-<body background="img\cool-background.jpg">
+<body background="cool-background.jpg">
 <!logo>
 <div style="position:absolute; top:0;">
-<img src="img\logo.png" width="200" height="200">
+<img src="logo.png" width="200" height="200">
 </div>
 <!end logo>
 <br>
