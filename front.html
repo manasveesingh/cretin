@@ -1,0 +1,233 @@
+﻿<html>
+<head>
+
+<style type="text/css">
+
+
+/*serach otion.................*/
+form{
+  width:10px;
+  margin:0 auto;
+
+}
+.search { 
+  padding:6px 15px 6px 30px;
+  margin:3px; 
+  width: 600px;
+  border: 3px solid #ff6600;
+}
+.rounded { 
+  border-radius:15px; 
+  -moz-border-radius:15px; 
+  -webkit-border-radius:15px; 
+}
+/*...end search....*/
+
+/*side menu 2*/
+.shadowblockmenu-v ul{
+border: 1px solid #ff6600;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+.shadowblockmenu-v{
+width: 200px; /* width of menu */
+
+}
+
+
+.shadowblockmenu-v ul li{
+margin:0;
+padding:0;
+border: 1px solid #ff6600;
+}
+
+.shadowblockmenu-v ul li a{
+display:block;
+color: yellow;
+padding: 5px 10px;
+text-decoration: none;
+border-bottom: 1px solid black;
+border-right: 1px solid black; /*right border between menu items*/
+-moz-box-shadow: inset 7px 0 10px rgba(114,114,114, 0.6); /* Add inset shadow to each menu item. First 3 values in (114,114,114, 0.5) specifies rgb values, last specifies opacity */
+-webkit-box-shadow: inset 7px 0 10px rgba(114,114,114, 0.6);
+box-shadow: inset 7px 0 10px rgba(114,114,114, 0.6);
+text-shadow: 0 -1px 1px black; /* CSS text shadow to give text some depth */
+-moz-transition: all 0.2s ease-in-out; /* Enable CSS transition between property changes */
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.shadowblockmenu-v ul li a:hover, .shadowblockmenu-v ul li a.selected{
+color: white;
+-moz-box-shadow: inset 7px 0 10px rgba(216,89,39, 0.5), inset 0 0 15px rgba(216,89,39, 0.6), inset 0 0 20px rgba(216,89,39, 0.8); /* Add 3 inset shadows to each menu item  */
+-webkit-box-shadow: inset 7px 0 10px rgba(216,89,39, 0.5), inset 0 0 15px rgba(216,89,39, 0.6), inset 0 0 20px rgba(216,89,39, 0.8);
+box-shadow: inset 7px 0 10px rgba(216,89,39, 0.5), inset 0 0 15px rgba(216,89,39, 0.6), inset 0 0 20px rgba(216,89,39, 0.8);
+}
+/*......end side menu 2......*/
+
+
+/*......square img......*/
+p {
+    width: 200px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+        border-radius: 25px;
+}
+
+p:hover {
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+p img:hover {
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+img {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+.ch-img-1 { 
+  background-image: url("65.jpg") ;
+    background-repeat:  no-repeat;
+
+}
+
+.ch-img-2 { 
+  background-image: url("Short-Party-Wear-Western-Fashion-Dresses-2014-15-For-Western-Teen-Girls-Fashion-Fist-10.jpg") ;
+ 
+    background-repeat:  no-repeat;
+
+}
+
+.ch-img-3 { 
+  background-image: url("Vincitore-Pink-Faux-Georgette-Semi-SDL065763764-1-e8fa1 (1).jpg ") ;
+ 
+    background-repeat:  no-repeat;
+
+}
+
+.ch-img-4 { 
+  background-image: url("4eccdcfcf0283c3def463b2beff0673b.jpg");
+ 
+    background-repeat:  no-repeat;
+
+}
+/*......end square img......*/
+
+
+/*.......signin.......*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 0px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+       border-radius: 25px;
+      }
+
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*.......end signin.......*/
+
+</style>
+</head>
+<body background="img\cool-background.jpg">
+
+<!search>
+<div style="position: absolute;left:400px; top:50px;">
+<form>
+  <span><input type="text" class="search rounded" placeholder="Search..."></span>
+</form>
+</div>
+<! end search>
+
+<!signin>
+<div style="position: absolute;top:0px; left:1000px;">
+<button class="button"><a href="signin.php">Sign In</a></button></div>
+<div style="position: absolute;top:0px; left:1120px;">
+<button class="button"><a href="login.php">Log In</a></button></div>
+<!end signin>
+
+<!side menu 1>
+<font size="5">
+<div class="shadowblockmenu-v" style="position: absolute;top:200 ;left:10;">
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="style2.html">TRENDING</a></li>
+<li><a href="style2.html">PRODUCTS</a></li>
+<li><a href="abt.php">CONTACT US</a></li>
+<li><a href="">FAQ</a></li>
+</ul>
+</div>
+<! end side menu 1>
+
+
+
+<!sale img>
+
+<div style="position:absolute; left: 970; top: 100;"><img src="img\fantastic-discount-voucher-with-3d-elements_1126-113.jpg" height="200" width="250"></div>
+<div style="position:absolute; left: 970; top: 300;" ><img src="img\visa_checkout_10.jpg" height="200" width="250"></div>
+<div style="position:absolute; left: 250; top: 100;"><embed src="f1.swf" height="400" width="720" ></div>
+<! end sale img>
+
+<!side menu 2>
+<div  style="position: absolute;top: 500; left:50;">
+<font size="5" color=" #ff8533"><u><b>CATEGORIES</b></u></font>
+</div>
+<font size="5">
+<div class="shadowblockmenu-v" style="position: absolute;top: 530;left:10;">
+<ul>
+<li><a href="sports.html.html">Spots Wear</a></li>
+<li><a href="western.html.html">Dresses</a></li>
+<li><a href="traditional.html">suits</a></li>
+<li><a href="enthnic.html.html">Sarees</a></li>
+<li><a href="">Tops</a></li>
+<li><a href="">Bottom Wear</a></li>
+</ul>
+</div>
+<! end side menu 2>
+
+
+
+
+<!square photos>
+<div style="position: absolute; top:500;left:250;">
+  <a href="sports.html.html"> <p class="class=ch-info-front ch-img-1"></p></a>
+</div>
+<div style="position: absolute;top:500; left:500; ">
+   <a href="western.html.html"> <p class="class=ch-info-front ch-img-2"></p></a>
+</div>
+
+<div style="position: absolute;top:500; left:750;">
+    <a href="traditional.html">  <p class="class=ch-info-front ch-img-3"></p></a>
+</div>
+<div style="position: absolute;top:500; left:1000;">
+     <a href="enthnic.html.html"> <p class="class=ch-info-front ch-img-4"></p></a>
+</div>
+<! end square photos>
+
+<!logo>
+<div style="position:absolute; top:0;">
+<img src="img\logo.png" width="200" height="200">
+</div>
+<!end logo>
+
+
+    </body>
+
+    </html>

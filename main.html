@@ -1,0 +1,126 @@
+<html>
+<head>
+<style>
+html {
+ font-family:  'Algerian', arial;
+  color: 	#e60000;
+  font-weight: 800;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 250px;
+  margin-top: -66px;
+  text-align: center;
+  perspective: 600px;
+}
+div span {
+  width: 16.6666666%;
+  display: inline-block;
+  float: left;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  opacity: 0
+}
+div span:nth-child(1) {
+  animation-name: animC;
+}
+div span:nth-child(2) {
+  color: #555;
+  animation-name: animO1;
+}
+div span:nth-child(3) {
+  color: #555;
+  animation-name: animS1;
+}
+div span:nth-child(4) {
+  color: #555;
+  animation-name: animM;
+}
+div span:nth-child(5) {
+  color: #555;
+  animation-name: animO2;
+}
+div span:nth-child(6) {
+  animation-name: animS2;
+}
+
+
+
+
+
+
+@keyframes animC {
+  0% , 90% { transform: translate3D( 240%,0,-400px ) rotateY( 85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( 220%,0,0 ) rotateY( 40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+@keyframes animO1 {
+  15%, 75% { transform: translate3D( 120%,0, 0 ) rotateY( 90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: 	#e60000; opacity: 1 }
+}
+@keyframes animS1 {
+  20%, 70% { transform: translate3D( 30%,0, 0 ) rotateY( 90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: 	#e60000; opacity: 1 }
+}
+@keyframes animM {
+  20%, 70% { transform: translate3D( -30%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: 	#e60000; opacity: 1 }
+}
+@keyframes animO2 {
+  15%, 75% { transform: translate3D( -120%,0, 0 ) rotateY( -90deg ); color: #999; opacity: 0 }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); color: 	 #e60000; opacity: 1 }
+}
+@keyframes animS2 {
+  0% , 90% { transform: translate3D( -240%,0,-400px ) rotateY( -85deg ); opacity: 0 }
+  10%, 80% { transform: translate3D( -220%,0,0 ) rotateY( -40deg ); opacity: 1; }
+  32%, 58% { transform: translate3D( 0,0,0 ) rotateY( 0deg ); }
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: yellow;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: red}
+
+.button:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body  background="img\girl_street_shopping_cape_town_38679_2560x1600.jpg" >
+<img src="img\logo.png">
+<div style="position: absolute;top: 100px; left:10px;"><font size="7" face="arial">Always in style</font>
+  </div>
+  <div>
+    <span>C</span>
+    <span>R</span>
+    <span>E</span>
+    <span>T</span>
+    <span>I</span>
+    <span>N</span>
+
+    <button class="button"><b><a href="front.html">It's all inside>>></a></b></button>
+
+
+  </div>
+</body>
+</html>
