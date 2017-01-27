@@ -3,11 +3,11 @@
 session_start();
 ?>
 <html>
-<body background="img\cool-background.jpg" >
+<body background="cool-background.jpg" >
 <h1><center><font  color=yellow size="7"><u>ABOUT CRETIN</u></font></center></h1>
  <!logo>
 <div style="position:absolute; top:0;">
-<img src="img\logo.png" width="200" height="200">
+<img src="logo.png" width="200" height="200">
 </div>
 <!end logo>
 <center>
