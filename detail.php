@@ -1,5 +1,5 @@
 <html>
-<body background="img\cool-background.jpg">
+<body background="cool-background.jpg">
 
 <!logo>
 <div style="position:absolute; top:0;">
