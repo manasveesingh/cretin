@@ -41,13 +41,13 @@
 <?php
 function xyz()
 {
-$f=$_POST['id'];
-$l=$_POST['pass'];
+$f=mysqli_real_escape_string($_POST['id']);
+$l=mysqli_real_escape_string($_POST['pass']);
 
 
 $conn=new mysqli("localhost","root","sunbeam","signin");
 
-$sql="select email,password from details";
+$sql="SELECT email,password FROM details WHERE email=$f and password=$l";
 
 $result=$conn->query($sql);
 

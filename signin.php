@@ -136,18 +136,27 @@ FEMALE<input type=radio name=rd>
 <?php
 function x()
 {
-$f=$_POST['fn'];
-$l=$_POST['ln'];
-$e=$_POST['em'];
+$f=test_input($_POST['fn']);
+$l=test_input($_POST['ln']);
+$e=test_input($_POST['em']);
 $p=$_POST['ps'];
 
 
 $conn=new mysqli("localhost","root","sunbeam","signin");
-$qr="insert into details(fname,lname,email,password) values('$f','$l','$e','$p')";
+$qr="INSERT INTO details(fname,lname,email,password) VALUES('$f','$l','$e','$p')";
 if($conn->query($qr)==true)
 echo "<center><font size=7 color=red>YOU ARE SIGNED IN...";
 else{
 echo "Error:".$qr."<br>".$conn->error;}
+
+function test_input($data)  //For securing input
+{
+  $data=trim($data);   //Trim Data
+  $data=stripslashes($data);  //Remove slashes
+  $data=htmlspecialchars($data); //Remove html tags
+  return $data;
+}
+
 $conn->close();
 }
 if(isset($_POST['btn']))

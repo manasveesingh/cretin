@@ -92,9 +92,9 @@
 function x()
 {
 	date_default_timezone_set("Asia/Calcutta");
-	$n=$_POST['nm'];
-    $a=$_POST['ad'];
-    $s=$_POST['sel'];
+	$n=test_input($_POST['nm']);
+    $a=test_input($_POST['ad']);
+    $s=test_input($_POST['sel']);
     $fp=fopen("ord.txt", "a+");
     $r=$n." ".$a." ".$s;
     fwrite($fp,$r."\r\n");
@@ -104,6 +104,14 @@ function x()
     echo "your order id-"." ".rand()." is placed and will be delivered by next week-date"." ".date('jS F Y',strtotime('+1 week'));
     echo " "."on your doorstep at"." ".$a." ".$s;
     echo "<br>THANK YOU!!!!";
+}
+
+function test_input($data)
+{
+	$data=trim($data);   //Trim Data
+	$data=stripslashes($data);  //Remove slashes
+	$data=htmlspecialchars($data); //Remove html tags
+	return $data;
 }
 
 
